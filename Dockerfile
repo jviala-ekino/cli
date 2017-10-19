@@ -25,4 +25,4 @@ RUN echo "PS1='Akamai CLI Sandbox >> '" >> /root/.bashrc
 WORKDIR /opt
 RUN akamai get akamai/cli-property
 RUN akamai get akamai/cli-purge
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/bash", "-c"]
